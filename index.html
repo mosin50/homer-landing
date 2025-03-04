@@ -13,23 +13,23 @@
             text-align: center;
         }
         .main-container {
-            display: flex; /* Ensures images and text are in one row */
-            justify-content: center; /* Centers content horizontally */
-            align-items: center; /* Aligns items at the same level */
-            height: 100vh; /* Full height of the screen */
+            display: flex; /* Align images and text in one row */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Align everything at the same level */
+            height: 100vh; /* Full viewport height */
             gap: 40px; /* Space between images and text */
             padding: 20px;
         }
         .image-container {
             display: flex;
-            gap: 20px; /* Space between the images */
+            gap: 20px; /* Space between the two logos */
         }
         .logo {
-            max-width: 300px; /* Adjust as needed */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 300px; /* Set a reasonable width */
+            height: auto; /* Maintain original aspect ratio */
         }
         .text-container {
-            max-width: 400px; /* Prevent text from being too wide */
+            max-width: 400px; /* Prevent text from stretching too wide */
             text-align: left; /* Align text to the left */
         }
         h1 {
@@ -56,8 +56,8 @@
     <div class="main-container">
         <!-- Image Section -->
         <div class="image-container">
-            <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="logo">
-            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo">
+            <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="logo" style="max-width: 300px; height: auto;">
+            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo" style="max-width: 200px; height: auto;">
         </div>
 
         <!-- Text Section -->
