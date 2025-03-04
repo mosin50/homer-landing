@@ -22,14 +22,19 @@
         }
         .image-container {
             display: flex;
-            gap: 40px; /* Space between the two logos */
+            gap: 20px; /* Space between the two logos */
         }
         .logo {
-            max-width: 1000px; /* Set a reasonable width */
-            height: auto; /* Maintain original aspect ratio */
+            max-width: 300px; /* Keep a fixed width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .homer-logo {
+            max-width: 300px; /* Keep the width */
+            max-height: 120px; /* Set a shorter height */
+            height: auto; /* Maintain aspect ratio */
         }
         .text-container {
-            max-width: 600px; /* Prevent text from stretching too wide */
+            max-width: 400px; /* Prevent text from stretching too wide */
             text-align: left; /* Align text to the left */
         }
         h1 {
@@ -56,8 +61,8 @@
     <div class="main-container">
         <!-- Image Section -->
         <div class="image-container">
-            <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="logo" style="max-width: 300px; height: auto;">
-            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo" style="max-width: 200px; height: auto;">
+            <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="homer-logo">
+            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo">
         </div>
 
         <!-- Text Section -->
