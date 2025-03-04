@@ -12,25 +12,33 @@
             background-color: #f8f8f8;
             text-align: center;
         }
-        .container {
-            display: flex; /* Make elements align in a row */
-            justify-content: center; /* Center images horizontally */
-            align-items: center; /* Align images vertically */
-            height: 100vh; /* Maintain full height */
-            gap: 20px; /* Adds space between the images */
+        .main-container {
+            display: flex; /* Ensures images and text are in one row */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Aligns items at the same level */
+            height: 100vh; /* Full height of the screen */
+            gap: 40px; /* Space between images and text */
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            gap: 20px; /* Space between the images */
         }
         .logo {
             max-width: 300px; /* Adjust as needed */
             height: auto; /* Maintain aspect ratio */
         }
+        .text-container {
+            max-width: 400px; /* Prevent text from being too wide */
+            text-align: left; /* Align text to the left */
+        }
         h1 {
             color: #d9534f;
-            margin: 0;
+            margin-bottom: 10px;
         }
         p {
             font-size: 18px;
             color: #333;
-            max-width: 600px;
             line-height: 1.5;
         }
         .contact {
@@ -45,13 +53,19 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="logo">
-        <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo">
-    </div>
+    <div class="main-container">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="logo">
+            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo">
+        </div>
 
-    <h1> </h1>
-    <p>Ensuring safety and fire protection for our customers. Our website is currently under construction, but we’ll be launching soon.</p>
-    <p class="contact">For inquiries, reach us at <a href="mailto:info@homerfireprotection.com">info@homerfireprotection.com</a></p>
+        <!-- Text Section -->
+        <div class="text-container">
+            <h1>Homer Fire Protection</h1>
+            <p>Ensuring safety and fire protection for our customers. Our website is currently under construction, but we’ll be launching soon.</p>
+            <p class="contact">For inquiries, reach us at <a href="mailto:info@homerfireprotection.com">info@homerfireprotection.com</a></p>
+        </div>
+    </div>
 </body>
 </html>
