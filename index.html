@@ -13,31 +13,31 @@
             text-align: center;
         }
         .main-container {
-            display: flex; /* Align images and text in one row */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Align everything at the same level */
-            height: 100vh; /* Full viewport height */
-            gap: 40px; /* Space between images and text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 40px;
             padding: 20px;
         }
         .image-container {
             display: flex;
-            gap: 20px; /* Space between the two logos */
-            align-items: center; /* Ensures both logos are vertically aligned */
-        }
-        .logo {
-            max-width: 300px; /* Keep a fixed width */
-            height: auto; /* Maintain aspect ratio */
+            gap: 20px;
+            align-items: center;
         }
         .homer-logo {
-            max-width: 300px; /* Keep the width */
-            max-height: 90px; /* Reduce height */
-            height: auto; /* Maintain aspect ratio */
-            align-self: center; /* Ensures alignment with other logo */
+            max-width: 300px;
+            max-height: 120px;
+            height: auto;
+        }
+        .nafed-logo {
+            max-width: 200px; /* Smaller size for the second logo */
+            max-height: 100px; /* Adjust height accordingly */
+            height: auto;
         }
         .text-container {
-            max-width: 400px; /* Prevent text from stretching too wide */
-            text-align: left; /* Align text to the left */
+            max-width: 400px;
+            text-align: left;
         }
         h1 {
             color: #d9534f;
@@ -64,7 +64,7 @@
         <!-- Image Section -->
         <div class="image-container">
             <img src="brandmark-design.png" alt="Homer Fire Protection Logo" class="homer-logo">
-            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="logo">
+            <img src="hr_nafed_logo.jpg" alt="NAFED Logo" class="nafed-logo">
         </div>
 
         <!-- Text Section -->
